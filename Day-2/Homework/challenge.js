@@ -12,12 +12,17 @@ console.log('challenge.js has been included!');
  * Declare a variable called myFavoriteNumber on one line; assign it a value on
  * the next line.
  */
+let myFavoriteNumber;
+myFavoriteNumber = 7;
 
 /*
  * Prompt 2:
  *
  * Declare 3 variables using each of let, const, and var.
  */
+let letVariable;
+const constVariable = null;
+var varVariable;
 
 /*
  * Prompt 3:
@@ -29,6 +34,12 @@ console.log('challenge.js has been included!');
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
+let promptThree = 12;
+promptThree += 2;
+promptThree -= 7;
+promptThree *= 3;
+promptThree /= 7;
+promptThree %= 2;
 
 /*
  * Prompt 4:
@@ -41,6 +52,10 @@ console.log('challenge.js has been included!');
  * and lastName variables.
  */
 
+const firstName = "Stephen";
+const lastName = "Cooper";
+const fullName = firstName + " " + lastName;
+
 /*
  * Prompt 5:
  *
@@ -51,6 +66,10 @@ console.log('challenge.js has been included!');
  * the value 'hello world!'.
  */
 
+const hello = "hello";
+const world = "world";
+let message = `${hello} ${world}`;
+
 /*
  * Prompt 6:
  *
@@ -58,12 +77,25 @@ console.log('challenge.js has been included!');
  */
 
 // A. Use loose-equals (==) to create a statement that is false
+// (6==1)
+
 // B. Use strict equals (===) to create a statement that is true
+// ("string" === "string")
+
 // C. Use strict unequal (!==) to create a statement that is true
+// ("String" !== "string")
+
 // D. Use less than (<) to create a statement that is false
+//(10 < 2)
+
 // E. Use greater than (>) to create a statement that is false
+//(10 > 100)
+
 // F. Use less than or equals (<=) to create a statemetn that is true
+//(5 <= 11)
+
 // G. Use greater than or equals (>=) to create a statemetn that is false
+//(5 >= 11)
 
 /*
  * Prompt 7:
@@ -77,19 +109,19 @@ let c = 57;
 let d = 16;
 let e = 'Kevin';
 
-// a _ b;
+// a < b;
 
-// c _ d;
+// c > d;
 
-// 'Name' ___ 'Name';
+// 'Name' === 'Name';
 
-// a _ b ___ c;
+// a < b !== c;
 
-// a _ a ___ d;
+// a === a <= d;
 
-// e ___ 'Kevin';
+// e === 'Kevin';
 
-// 48 ___ '48';
+// 48 == '48';
 
 /*
  * Prompt 8:
@@ -103,19 +135,19 @@ c = -5;
 d = 3000;
 e = 'Jelly Bean';
 
-// a _ b;
+// a > b;
 
-// c _ d;
+// c > d;
 
-// 'Peanut' ___ 'Peanut';
+// 'Peanut' !== 'Peanut';
 
-// a _ b ___ c;
+// a > b === c;
 
-// a _ a ___ d;
+// a !== a >= d;
 
-// e ___ 'Jelly Bean';
+// e !== 'Jelly Bean';
 
-// 48 ___ '48';
+// 48 === '48';
 
 /*
  * Prompt 9:
@@ -134,6 +166,8 @@ const array3 = [
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
 
+console.log(array1[2] + ", " + array2[1][1] + ", " + array3[1][1][1][0]);
+
 /*
  * Prompt 10:
  *
@@ -141,6 +175,7 @@ const array3 = [
  */
 
 const array4 = ['a', 'b', 'c', 'd', 'e'];
+let secondToLastItem = (array4[array4.length - 2]);
 
 /*
  * Prompt 11:
@@ -156,9 +191,19 @@ const cathleen = ['Cathleen', 186, 'New York'];
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Gameboy".
 
+thom.shift();
+thom.unshift("Gameboy");
+
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
 
+karolin[1]++;
+
 // Change Cathleen's hometown from New York to "Gotham City".
 
+cathleen[3] = "Gotham City";
+
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+
+kristyn.pop();
+kristyn.push("Oakland");
