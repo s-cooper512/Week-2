@@ -157,13 +157,13 @@ user.address = {
 
 console.log("Address: " + user.address.city);
 //8.7
-for (i=0;Object.keys(user).length > i;i++) {
-    let category = Object.keys(user)[i];
+for (i=0;Object.keys(user).length > i;i++) { //for each variable in user
+    let category = Object.keys(user)[i]; //assign name of variable (not content) to category
     if (category !== "address") {
-        console.log(category + ": " + user[category]);
+        console.log(category + ": " + user[category]); //output value of given variable in users
      } else if (category == "address") {
         console.log(category + ": ");
-        for (j=0; Object.keys(user.address).length > j;j++) {
+        for (j=0; Object.keys(user.address).length > j;j++) { //same as parent loop, but only for variables under the address object
             category = Object.keys(user.address)[j];
             console.log(category + ": " + user.address[category]);
         }
