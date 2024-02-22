@@ -26,8 +26,8 @@ QUIZ - Answers are selected in -(...)-
 The variable username has a value on which lines? (That is: on which lines will console.loging it not return undefined?)
 A, B, I, J, K
 A and B
--(All lines)-
-All lines except A
+All lines
+-(ll lines except A)-
 
 The variable profileID has a value on which lines?
 A, B, I, J, K
