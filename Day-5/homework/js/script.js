@@ -9,7 +9,13 @@ data.forEach(element => {
 
 // 2. totalAgeAllPersons:
 // Find the total combined age of all persons.
+let totalAgeAllPersons = 0;
 
+data.forEach(element => {
+    totalAgeAllPersons += element.age;
+});
+
+console.log(totalAgeAllPersons);
 
 // 3. totalAgeAllPets:
 // Find the total combined age of all pets.
