@@ -19,6 +19,15 @@ console.log(totalAgeAllPersons);
 
 // 3. totalAgeAllPets:
 // Find the total combined age of all pets.
+let totalAgeAllPets = 0;
+
+data.forEach(element => {
+    element.pets.forEach(element2 => {
+        totalAgeAllPets += element2.age;
+    });
+});
+
+console.log(totalAgeAllPets);
 
 // 4. oldEnough:
 // Use .filter() to create an array of people old enough to be president.
