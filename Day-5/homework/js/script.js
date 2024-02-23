@@ -33,7 +33,13 @@ console.log(elders);
 
 // 5. sadPeople:
 // Use .filter() to create an array of "sad" people (people with no pets).
+function checkForPets (pers) {
+    return (pers.pets.length == 0);
+}
 
+let sadPeople = data.filter(checkForPets);
+
+console.log(sadPeople);
 
 // 6. warAndPeace:
 // Use.map() to create an array called warAndPeace that has, in each index the string "war" or "peace"
