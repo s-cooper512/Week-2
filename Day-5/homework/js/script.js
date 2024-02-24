@@ -45,13 +45,50 @@ console.log(sadPeople);
 // Use.map() to create an array called warAndPeace that has, in each index the string "war" or "peace"
 //   * the string "war" if the person at that has BOTH a cat AND a dog.
 //   * the string "peace" otherwise.
+function turnAnimalsIntoSadBook (petList) {
+    petList.forEach(personsPets => {
+        let hasDog = false;
+        let hasCat = false;
 
+        personsPets.forEach(individualPet => {
+            if (individualPet.type == 'dog') {
+                hasDog = true;
+            }
+
+            if (individualPet.type == 'cat') {
+                hasCat = true;
+            }
+        });
+
+        if (hasCat === true && hasDog === true) {
+            return (warAndPeace.push("War"));
+        }
+
+        if (hasCat !== true || hasDog !== true) {
+            return (warAndPeace.push("Peace"));
+        }
+    });
+}
+
+let siberianWinter = data.map(person => person.pets);
+let warAndPeace = [];
+turnAnimalsIntoSadBook(siberianWinter);
+console.log(warAndPeace);
 
 // 7. justSpock:
 // Create an array of all the pet objects where the pets named is "spock".
+function isNamedSpock (pet) {
+    return (pet.name === "spock");
+}
+
+let petNames = data.map(person => person.pets);
+petNames = petNames.flat(2);
+petNames = petNames.filter(isNamedSpock);
+
+console.log(petNames);
 
 
-// HUNGRY FOR MORE???
+// HUNGRY FOR MORE???  NO. ABSOLUTELY NOT. BEGONE FROM HERE!
 
 // 8. catYears:
 // Find the total combined age of all cats (type: "cat").
