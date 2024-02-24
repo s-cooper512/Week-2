@@ -88,7 +88,7 @@ petNames = petNames.filter(isNamedSpock);
 console.log(petNames);
 
 
-// HUNGRY FOR MORE???  NO. ABSOLUTELY NOT. BEGONE FROM HERE!
+// HUNGRY FOR MORE???  NO. ABSOLUTELY NOT. BEGONE FROM HERE! AAAAAAAAAAAAAAAAAAAAAAAAA
 
 // 8. catYears:
 // Find the total combined age of all cats (type: "cat").
